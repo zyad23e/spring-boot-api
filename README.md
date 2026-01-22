@@ -4,19 +4,20 @@ RESTful backend API for a micro-blogging platform built with Spring Boot.
 Provides user registration, authentication, and message management with relational persistence using Spring Data JPA and Hibernate.
 
 ## Features
-- User registration with validation and duplicate-username handling
-- User login with credential verification
-- Create, read, update (PATCH), and delete messages
-- Retrieve all messages or messages by a specific user
-- Ownership checks and domain-level validation
-- Proper HTTP status codes and idempotent DELETE behavior
+- User account creation and authentication logic
+- Create, update, delete, and retrieve messages
+- Retrieve all messages posted by a specific user
+- RESTful API design with clear separation of concerns
+- Service and repository layers for business logic and persistence
+- Basic validation and error handling via HTTP status codes
 
 ## Tech Stack
 - Java
 - Spring Boot
 - Spring Web (REST)
 - Spring Data JPA / Hibernate
-- H2 (in-memory database)
+- MySQL
+- Maven
 
 ## API Endpoints
 - `POST /register`
